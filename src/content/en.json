@@ -14,6 +14,14 @@
     "label": "Main navigation",
     "home": "{{name}} — home"
   },
+  "language": {
+    "label": "Language",
+    "help": "Choose a language to view this page.",
+    "names": {
+      "en": "English",
+      "es": "Español"
+    }
+  },
   "actions": {
     "explore": "Explore my experience",
     "downloadCv": "Download CV",

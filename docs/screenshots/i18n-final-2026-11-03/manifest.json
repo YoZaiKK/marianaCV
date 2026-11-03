@@ -1,0 +1,82 @@
+[
+  {
+    "file": "en-desktop-page.png",
+    "locale": "en",
+    "viewport": {
+      "width": 1440,
+      "height": 1000
+    },
+    "state": "page",
+    "sha256": "668d566b778c499e3c5a5d2faeb25aa93648d393832145873475873dca42e2dc"
+  },
+  {
+    "file": "en-desktop-language-open.png",
+    "locale": "en",
+    "viewport": {
+      "width": 1440,
+      "height": 1000
+    },
+    "state": "language-open",
+    "sha256": "21c136eac34803b1d82e1e24a7819d339e53f1e54727ece6660abf26ca2235e1"
+  },
+  {
+    "file": "en-mobile-page.png",
+    "locale": "en",
+    "viewport": {
+      "width": 390,
+      "height": 844
+    },
+    "state": "page",
+    "sha256": "a968d445c85703405964ec11d50322a7024a3621a31025eba23786183e737283"
+  },
+  {
+    "file": "en-mobile-language-open.png",
+    "locale": "en",
+    "viewport": {
+      "width": 390,
+      "height": 844
+    },
+    "state": "language-open",
+    "sha256": "d403182ecf9f23efb14ed6a9e0cdfcfffbd5d09c7eea2f619f76906a4f5b102e"
+  },
+  {
+    "file": "es-desktop-page.png",
+    "locale": "es",
+    "viewport": {
+      "width": 1440,
+      "height": 1000
+    },
+    "state": "page",
+    "sha256": "924440e9ffb45af1fc9fbe3ea6113f0e4dcf093f6c4f4a2226e2227d03f02854"
+  },
+  {
+    "file": "es-desktop-language-open.png",
+    "locale": "es",
+    "viewport": {
+      "width": 1440,
+      "height": 1000
+    },
+    "state": "language-open",
+    "sha256": "45d999902f4023a91e200a285402229f8c381e23841c1734040c5593799fdba3"
+  },
+  {
+    "file": "es-mobile-page.png",
+    "locale": "es",
+    "viewport": {
+      "width": 390,
+      "height": 844
+    },
+    "state": "page",
+    "sha256": "b3a960bb94057f1cab6d7eb479c9a5c9bb8eb305db65192eea30f5baba7d704e"
+  },
+  {
+    "file": "es-mobile-language-open.png",
+    "locale": "es",
+    "viewport": {
+      "width": 390,
+      "height": 844
+    },
+    "state": "language-open",
+    "sha256": "64fe990225741fa0c6a570d3bf24eafc124de0b773a8a9df0f816f0cf437ee76"
+  }
+]

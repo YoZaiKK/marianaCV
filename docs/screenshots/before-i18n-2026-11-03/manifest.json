@@ -1,0 +1,27 @@
+[
+  {
+    "file": "desktop-middle.png",
+    "sha256": "852a91d868c0341c06df8d51b684665f5f42f291896690216b6ab03ce31e4820",
+    "bytes": 456532
+  },
+  {
+    "file": "desktop-top.png",
+    "sha256": "f013e841f7dff6f8868ae9cab2013bbcd106510f4f952f3118b175049aa80b67",
+    "bytes": 524940
+  },
+  {
+    "file": "desktop.png",
+    "sha256": "52b4a75bcd271da50610a89dc1c4854fca354cc208e1dc3a0cb79b424376837b",
+    "bytes": 1074501
+  },
+  {
+    "file": "mobile-top.png",
+    "sha256": "668987468def13377fe8adec513d3f32e5130c24e11d7474dcea11fda3ea9e9a",
+    "bytes": 109348
+  },
+  {
+    "file": "mobile.png",
+    "sha256": "f2701302585fcc2352a8f96fe4ae75c0ec7af7d8f54bcec2461b3053d36a91ed",
+    "bytes": 707237
+  }
+]

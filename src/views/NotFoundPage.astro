@@ -1,0 +1,21 @@
+---
+import { getContent } from '../content';
+import type { Locale } from '../i18n';
+import SiteLayout from '../layouts/SiteLayout.astro';
+import Arrow from '../components/Arrow.astro';
+
+interface Props { locale: Locale }
+const content = getContent(Astro.props.locale);
+const { t, data, url } = content;
+---
+
+<SiteLayout content={content} title={t('meta.notFoundTitle', { name: data.profile.name })} description={t('meta.notFoundDescription', { name: data.profile.name })} notFound>
+  <section class="container not-found">
+    <div class="card">
+      <p class="eyebrow">{t('notFound.code')}</p>
+      <h1>{t('notFound.title')}</h1>
+      <p>{t('notFound.description')}</p>
+      <a class="button" href={url()}>{t('actions.backHome')}<Arrow /></a>
+    </div>
+  </section>
+</SiteLayout>

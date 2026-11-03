@@ -9,8 +9,45 @@ import PearlBackground from '../components/PearlBackground.astro';
 import SiteHeader from '../components/SiteHeader.astro';
 import SiteFooter from '../components/SiteFooter.astro';
 import type { SiteContent } from '../content';
+import { locales, localeUrl } from '../i18n';
+
 interface Props { content: SiteContent; title?: string; description?: string; notFound?: boolean }
-const { content, title = content.t('meta.homeTitle', { name: content.data.profile.name }), description = content.t('meta.homeDescription', { name: content.data.profile.name }), notFound = false } = Astro.props;
-const canonical = Astro.site && !notFound ? new URL(Astro.url.pathname, Astro.site).href : undefined;
+const {
+  content,
+  title = content.t('meta.homeTitle', { name: content.data.profile.name }),
+  description = content.t('meta.homeDescription', { name: content.data.profile.name }),
+  notFound = false,
+} = Astro.props;
+const canonical = Astro.site && !notFound ? new URL(content.url(), Astro.site).href : undefined;
 ---
-<!doctype html><html lang={content.locale}><head><meta charset="utf-8" /><meta name="viewport" content="width=device-width, initial-scale=1" /><title>{title}</title><meta name="description" content={description} /><meta name="theme-color" content="#F2F2F2" /><link rel="icon" type="image/svg+xml" href="/favicon.svg" /><meta property="og:type" content="website" /><meta property="og:title" content={title} /><meta property="og:description" content={description} /><meta name="twitter:card" content="summary" />{canonical && <><link rel="canonical" href={canonical} /><meta property="og:url" content={canonical} /></>}{notFound && <meta name="robots" content="noindex" />}</head><body><a class="skip-link" href="#main-content">{content.t('accessibility.skip')}</a><PearlBackground /><SiteHeader content={content} /><main id="main-content" tabindex="-1"><slot /></main><SiteFooter content={content} /></body></html>
+
+<!doctype html>
+<html lang={content.locale}>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>{title}</title>
+    <meta name="description" content={description} />
+    <meta name="theme-color" content="#F2F2F2" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content={title} />
+    <meta property="og:description" content={description} />
+    <meta property="og:locale" content={content.locale === 'es' ? 'es_MX' : 'en_US'} />
+    {locales.filter(locale => locale !== content.locale).map(locale => <meta property="og:locale:alternate" content={locale === 'es' ? 'es_MX' : 'en_US'} />)}
+    <meta name="twitter:card" content="summary" />
+    {canonical && <><link rel="canonical" href={canonical} /><meta property="og:url" content={canonical} /></>}
+    {Astro.site && !notFound && <>
+      {locales.map(locale => <link rel="alternate" hreflang={locale} href={new URL(localeUrl(locale), Astro.site).href} />)}
+      <link rel="alternate" hreflang="x-default" href={new URL(localeUrl('en'), Astro.site).href} />
+    </>}
+    {notFound && <meta name="robots" content="noindex" />}
+  </head>
+  <body>
+    <a class="skip-link" href="#main-content">{content.t('accessibility.skip')}</a>
+    <PearlBackground />
+    <SiteHeader content={content} page={notFound ? 'notFound' : 'home'} />
+    <main id="main-content" tabindex="-1"><slot /></main>
+    <SiteFooter content={content} />
+  </body>
+</html>

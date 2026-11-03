@@ -1,0 +1,191 @@
+{
+  "meta": {
+    "homeTitle": "{{name}} | Recursos Humanos",
+    "homeDescription": "Conoce la experiencia de {{name}} en atracción de talento, desarrollo organizacional, capacitación y administración de Recursos Humanos.",
+    "notFoundTitle": "Página no encontrada | {{name}}",
+    "notFoundDescription": "No se encontró esta página. Vuelve al perfil profesional de {{name}}."
+  },
+  "navigation": {
+    "about": "Perfil",
+    "expertise": "Áreas",
+    "experience": "Trayectoria",
+    "education": "Formación",
+    "contact": "Contacto",
+    "label": "Navegación principal",
+    "home": "{{name}} — inicio"
+  },
+  "language": {
+    "label": "Idioma",
+    "help": "Selecciona un idioma para ver esta página.",
+    "names": {
+      "en": "English",
+      "es": "Español"
+    }
+  },
+  "actions": {
+    "explore": "Explorar mi trayectoria",
+    "downloadCv": "Descargar CV",
+    "downloadCvAccessible": "Descargar el CV de {{name}} en inglés y español (PDF)",
+    "getInTouch": "Contactar",
+    "sendEmail": "Enviar un correo",
+    "copyEmail": "Copiar correo",
+    "backToTop": "Volver arriba",
+    "backHome": "Volver al inicio"
+  },
+  "accessibility": {
+    "skip": "Saltar al contenido principal",
+    "emailStatus": "Estado de la copia del correo",
+    "footerNavigation": "Más sobre {{name}}",
+    "currentRole": "Puesto actual"
+  },
+  "hero": {
+    "eyebrow": "Personas. Propósito. Posibilidades.",
+    "role": "Profesional de Recursos Humanos",
+    "statement": "Acompañar a las personas desde la atracción de talento, el desarrollo organizacional y la gestión cotidiana de Recursos Humanos.",
+    "location": "Ciudad de México, México",
+    "note": "Formación en Psicología. Una perspectiva centrada en las personas."
+  },
+  "profile": {
+    "eyebrow": "Un poco sobre mí",
+    "title": "Recursos Humanos con enfoque en las personas.",
+    "intro": "Soy licenciada en Psicología con experiencia en reclutamiento, desarrollo organizacional, capacitación y administración de personal.",
+    "body": "Mi trabajo abarca la detección de necesidades de capacitación, la evaluación del desempeño, los planes de carrera y el seguimiento de personal, junto con iniciativas de integración, cultura y bienestar organizacional.",
+    "aside": "Conectar personas, procesos y desarrollo."
+  },
+  "expertise": {
+    "eyebrow": "Dónde contribuyo",
+    "title": "Áreas de experiencia",
+    "intro": "Tres áreas de Recursos Humanos que se complementan.",
+    "talentAcquisition": {
+      "title": "Atracción de talento",
+      "description": "Reclutamiento y selección para puestos corporativos, administrativos y operativos, incluidos procesos masivos, filtrado de candidaturas, entrevistas y evaluación psicométrica."
+    },
+    "organizationalDevelopment": {
+      "title": "Desarrollo organizacional",
+      "description": "Detección de necesidades de capacitación, evaluación del desempeño, planes de carrera e iniciativas de cultura, integración y bienestar laboral."
+    },
+    "hrOperations": {
+      "title": "Administración de personal",
+      "description": "Gestión de expedientes, incorporación y salida de personal, seguimiento de contratos de prueba, control de asistencia y apoyo en nómina."
+    }
+  },
+  "experience": {
+    "eyebrow": "Mi trayectoria profesional",
+    "title": "La experiencia, en práctica.",
+    "intro": "Reclutamiento, desarrollo y el trabajo diario de acompañar a las personas.",
+    "additional": "Responsabilidades adicionales",
+    "additionalAccessible": "Responsabilidades adicionales en {{company}}",
+    "responsibilities": "Responsabilidades seleccionadas",
+    "outcomes": "Resultados documentados",
+    "carters": {
+      "role": "Coordinadora de Recursos Humanos",
+      "summary": "Coordino actividades de reclutamiento, documentación e integración de personal para puestos corporativos, administrativos y operativos.",
+      "responsibilities": {
+        "recruitment": "Gestiono la atracción y selección de talento para puestos corporativos y administrativos, así como el reclutamiento masivo de puestos operativos del segmento nearshoring.",
+        "records": "Integro y mantengo actualizados los expedientes físicos y digitales del personal y su documentación laboral.",
+        "contracts": "Doy seguimiento a contratos de prueba, fechas de revisión y procesos de evaluación del personal.",
+        "onboarding": "Coordino actividades de inducción e incorporación para nuevos colaboradores.",
+        "culture": "Organizo celebraciones y eventos conmemorativos que favorecen la integración y el sentido de pertenencia.",
+        "incidents": "Registro y doy seguimiento a incidencias del personal como parte de la administración de Recursos Humanos."
+      }
+    },
+    "kaptan": {
+      "role": "Analista de Recursos Humanos",
+      "summary": "Combiné actividades de reclutamiento y capacitación con el seguimiento de colaboradores y la administración cotidiana de personal.",
+      "responsibilities": {
+        "recruitment": "Gestioné la publicación de vacantes, el filtrado de CV, las entrevistas y la aplicación de pruebas psicométricas.",
+        "training": "Diseñé e implementé programas de capacitación basados en la Detección de Necesidades de Capacitación (DNC).",
+        "onboarding": "Administré procesos de incorporación y salida de personal y di seguimiento a su integración y desempeño.",
+        "records": "Administré expedientes físicos y digitales y bases de datos del personal en Buk.",
+        "administration": "Apoyé procesos de nómina, control de asistencia y documentación administrativa.",
+        "workshops": "Organicé talleres internos de prevención del burnout y comunicación asertiva."
+      }
+    },
+    "colmena": {
+      "role": "Consultora de Recursos Humanos",
+      "summary": "Participé en procesos de reclutamiento, desarrollo organizacional y desarrollo del personal.",
+      "responsibilities": {
+        "recruitment": "Lideré procesos de reclutamiento e iniciativas de desarrollo organizacional.",
+        "performance": "Diseñé e implementé procesos de evaluación del desempeño y planes de carrera.",
+        "followUp": "Di seguimiento a la integración, el desempeño y la retención del personal.",
+        "culture": "Contribuí a iniciativas para fortalecer la cultura y el clima organizacional.",
+        "training": "Apoyé programas internos de capacitación y desarrollo."
+      }
+    },
+    "iztacala": {
+      "role": "Practicante de Psicología Organizacional",
+      "summary": "Apliqué mi formación en Psicología en procesos de selección, iniciativas de trabajo en equipo y actividades de bienestar laboral.",
+      "responsibilities": {
+        "assessment": "Participé en la aplicación e interpretación de pruebas psicométricas para la selección de personal.",
+        "wellbeing": "Colaboré en el diseño de estrategias de trabajo en equipo, resiliencia emocional y bienestar laboral.",
+        "workshops": "Participé en talleres de apoyo emocional durante la contingencia por COVID-19."
+      }
+    }
+  },
+  "education": {
+    "eyebrow": "La base de mi trayectoria",
+    "title": "Formación académica",
+    "academicAverage": "Promedio académico: {{average}}",
+    "psychology": { "title": "Licenciatura en Psicología" },
+    "diploma": {
+      "title": "Diplomado en Intervención Temprana y Rehabilitación del Neurodesarrollo"
+    }
+  },
+  "learningKinds": {
+    "degree": "Licenciatura",
+    "diploma": "Diplomado de educación continua",
+    "dc3": "Constancia DC-3",
+    "introductoryTraining": "Capacitación introductoria",
+    "training": "Capacitación",
+    "workshop": "Taller"
+  },
+  "development": {
+    "eyebrow": "Aprendizaje continuo",
+    "title": "Desarrollo profesional",
+    "groups": {
+      "hrAdministration": { "title": "Reclutamiento y administración de personal" },
+      "workplaceWellbeing": { "title": "Bienestar laboral y comunicación" },
+      "additional": { "title": "Formación complementaria" }
+    },
+    "recruitment": { "title": "Proceso de Reclutamiento y Selección" },
+    "payroll": { "title": "Nóminas, IMSS e INFONAVIT" },
+    "nom035": { "title": "Introducción a la NOM-035: Factores de Riesgo Psicosocial" },
+    "communication": { "title": "Comunicación Asertiva y Prevención del Burnout" },
+    "resilience": { "title": "Resiliencia e Intervención en Crisis" },
+    "grief": { "title": "Manejo de Duelo" }
+  },
+  "practice": {
+    "eyebrow": "La práctica cotidiana",
+    "title": "Herramientas, métodos e idiomas",
+    "groups": {
+      "tools": { "title": "Herramientas" },
+      "methods": { "title": "Métodos y evaluación" },
+      "languages": { "title": "Idiomas" }
+    },
+    "recruitmentPlatforms": "Plataformas de reclutamiento",
+    "dnc": "Detección de Necesidades de Capacitación (DNC)",
+    "nineBox": "Evaluación del desempeño y potencial mediante 9 Box",
+    "psychometrics": "Evaluación psicométrica: {{instruments}}",
+    "spanish": "Español — Nativo",
+    "english": "Inglés — B2"
+  },
+  "contact": {
+    "eyebrow": "La próxima conversación",
+    "title": "Conversemos.",
+    "description": "Si deseas conversar sobre puestos de Recursos Humanos y oportunidades profesionales, ponte en contacto conmigo.",
+    "location": "Azcapotzalco, Ciudad de México, México",
+    "copySuccess": "Correo copiado.",
+    "copyError": "No se pudo copiar el correo. Selecciónalo manualmente o utiliza el enlace para enviar un mensaje."
+  },
+  "dates": { "present": "Actualidad", "range": "{{start}}–{{end}}" },
+  "footer": {
+    "copyright": "© {{year}} {{name}}",
+    "development": "Desarrollo profesional",
+    "practice": "Herramientas, métodos e idiomas"
+  },
+  "notFound": {
+    "code": "404",
+    "title": "Una página fuera de lugar.",
+    "description": "No se encontró la página que buscas. Puedes volver a mi perfil profesional con el siguiente enlace."
+  }
+}

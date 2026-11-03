@@ -62,11 +62,7 @@
       "contentKey": "expertise.talentAcquisition",
       "order": 1,
       "publicationStatus": "published",
-      "experienceIds": [
-        "carters-coordinator",
-        "kaptan-analyst",
-        "colmena-consultant"
-      ],
+      "experienceIds": ["carters-coordinator", "kaptan-analyst", "colmena-consultant"],
       "accent": "sage"
     },
     {
@@ -74,11 +70,7 @@
       "contentKey": "expertise.organizationalDevelopment",
       "order": 2,
       "publicationStatus": "published",
-      "experienceIds": [
-        "kaptan-analyst",
-        "colmena-consultant",
-        "iztacala-intern"
-      ],
+      "experienceIds": ["kaptan-analyst", "colmena-consultant", "iztacala-intern"],
       "accent": "lilac"
     },
     {
@@ -86,10 +78,7 @@
       "contentKey": "expertise.hrOperations",
       "order": 3,
       "publicationStatus": "published",
-      "experienceIds": [
-        "carters-coordinator",
-        "kaptan-analyst"
-      ],
+      "experienceIds": ["carters-coordinator", "kaptan-analyst"],
       "accent": "pink"
     }
   ],
@@ -494,11 +483,7 @@
       "groupId": "methods",
       "name": null,
       "contentKey": "practice.psychometrics",
-      "instrumentNames": [
-        "Cleaver",
-        "Zavic",
-        "Figura Humana"
-      ],
+      "instrumentNames": ["Cleaver", "Zavic", "Figura Humana"],
       "order": 7,
       "publicationStatus": "published"
     },

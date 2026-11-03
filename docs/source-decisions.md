@@ -18,17 +18,17 @@ La copia descargable es idéntica al original; su huella e identidad/contacto ve
 
 ## Diferencias resueltas de forma conservadora
 
-| Fuente | Diferencia | Decisión |
-| --- | --- | --- |
-| Perfil inglés | Afirma más de tres años de experiencia | No publicar años acumulados; no sumar periodos superpuestos. |
-| Kaptan, inglés | Reducción del tiempo de contratación y mejora de candidatos | Omitir esos resultados hasta confirmación. |
-| Kaptan, inglés | Implementación de Buk | Describir administración de registros y bases de datos en Buk, respaldada por español. |
-| Colmena, inglés | Gestión de áreas de capacitación y desarrollo | Mantener liderazgo de procesos y apoyo a capacitación; no atribuir dirección de departamentos. |
-| Información adicional, español | Incluye 9 Box, ausente en inglés | Incluir como metodología respaldada por la fuente española. |
-| Licenciatura, inglés | Traduce el grado como B.A. | Utilizar Degree in Psychology, sin asignar un tipo de grado extranjero. |
-| DC-3, inglés | Utiliza certification | Presentar DC-3 training record, sin ampliar acreditación. |
-| Taller de duelo, inglés | Añade Therapeutic | Conservar Grief Management como workshop; no presentar servicios clínicos. |
-| Fechas inglesas | Usa Actual y orden poco natural | Mostrar Present y formato localizado; conservar precisión original. |
+| Fuente                         | Diferencia                                                  | Decisión                                                                                       |
+| ------------------------------ | ----------------------------------------------------------- | ---------------------------------------------------------------------------------------------- |
+| Perfil inglés                  | Afirma más de tres años de experiencia                      | No publicar años acumulados; no sumar periodos superpuestos.                                   |
+| Kaptan, inglés                 | Reducción del tiempo de contratación y mejora de candidatos | Omitir esos resultados hasta confirmación.                                                     |
+| Kaptan, inglés                 | Implementación de Buk                                       | Describir administración de registros y bases de datos en Buk, respaldada por español.         |
+| Colmena, inglés                | Gestión de áreas de capacitación y desarrollo               | Mantener liderazgo de procesos y apoyo a capacitación; no atribuir dirección de departamentos. |
+| Información adicional, español | Incluye 9 Box, ausente en inglés                            | Incluir como metodología respaldada por la fuente española.                                    |
+| Licenciatura, inglés           | Traduce el grado como B.A.                                  | Utilizar Degree in Psychology, sin asignar un tipo de grado extranjero.                        |
+| DC-3, inglés                   | Utiliza certification                                       | Presentar DC-3 training record, sin ampliar acreditación.                                      |
+| Taller de duelo, inglés        | Añade Therapeutic                                           | Conservar Grief Management como workshop; no presentar servicios clínicos.                     |
+| Fechas inglesas                | Usa Actual y orden poco natural                             | Mostrar Present y formato localizado; conservar precisión original.                            |
 
 ## Pendientes
 
@@ -59,3 +59,11 @@ Prompt final empleado:
 > Use case: stylized-concept. Asset type: full viewport background texture for an elegant professional editorial website. Generate one high-resolution landscape 3:2 image of a continuous pearl satin silk surface / flexible iridescent sheet, seen close up. Large flowing soft fabric folds, dimensional depth, broad smooth highlights and quiet shadow valleys. Actual folded material, not a flat gradient. Dominantly off-white pearl with soft pale sage #E8EFD2, restrained lilac #BEB9DE, blush pink #F7CDE7 and very subtle cyan glints. Understated luxurious editorial aesthetic, soft diffused studio lighting, low contrast, no hard black shadows, no blown highlights, no busy wrinkles. Folds travel diagonally through image; composition should remain beautiful in both landscape and central portrait crops. Texture fills entire image edge to edge. No objects, no people, no text, no lettering, no logos, no watermark, no palette swatches, no border. This is a new original texture, not a screenshot or webpage mockup.
 
 Las capas CSS de iluminación aproximan reflejos sobre esta textura: no son un cálculo físico de iluminación. Esta solución prioriza calidad visual y coste bajo frente a un shader.
+
+## Ampliación bilingüe
+
+Por instrucción posterior del usuario se incorporó español en `/es/` y un selector de idioma. La condición inicial de publicar solo inglés queda sustituida por esta versión bilingüe local; no se realizó publicación.
+
+`es.json` conserva las mismas 128 claves e interpolaciones que `en.json`. Se tradujeron contenidos, títulos académicos, capacidades, textos accesibles, mensajes y metadatos, sin incorporar resultados o atribuciones pendientes del CV. Los nombres propios y los nombres nativos English/Español se conservan. Las fechas y números de español utilizan el formato de México.
+
+Las cinco capturas existentes se copiaron sin cambios a `docs/screenshots/before-i18n-2026-11-03/`. Los conjuntos posteriores se guardaron por separado con manifiestos SHA-256. El selector y su menú usan los tokens del sitio y no agregan dependencias. Las verificaciones de esta ampliación están registradas en `verification.md`.

@@ -8,7 +8,11 @@ if (background) {
   let active = false;
   const update = () => {
     pendingFrame = 0;
-    const progress = scrollProgress(window.scrollY, document.documentElement.scrollHeight, window.innerHeight);
+    const progress = scrollProgress(
+      window.scrollY,
+      document.documentElement.scrollHeight,
+      window.innerHeight,
+    );
     if (progress === previous) return;
     previous = progress;
     const weights = lightWeights(progress);
@@ -17,7 +21,9 @@ if (background) {
     background.style.setProperty('--pink-light', String(weights.pink));
     background.dataset.scrollProgress = String(progress);
   };
-  const schedule = () => { if (!pendingFrame && active) pendingFrame = requestAnimationFrame(update); };
+  const schedule = () => {
+    if (!pendingFrame && active) pendingFrame = requestAnimationFrame(update);
+  };
   const observer = typeof ResizeObserver === 'function' ? new ResizeObserver(schedule) : null;
   const syncPreference = () => {
     if (reducedMotion.matches) {

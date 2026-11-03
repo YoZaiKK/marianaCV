@@ -2,7 +2,7 @@
 import { published, type SiteContent } from '../../content';
 import SectionHeading from '../SectionHeading.astro';
 interface Props { content: SiteContent }
-const { content: { data, t, organization, period, locale } } = Astro.props;
+const { content: { data, t, organization, period, formatLocale } } = Astro.props;
 const entries = published(data.education);
 ---
-{entries.length > 0 && <section class="container section" id="education" aria-labelledby="education-title"><SectionHeading id="education-title" eyebrow={t('education.eyebrow')} title={t('education.title')} /><div class="grid-two education-grid">{entries.map(entry => <article class="card education-card"><p class="eyebrow">{t(`learningKinds.${entry.kind}`)}</p><h3>{t(`${entry.contentKey}.title`)}</h3><p class="institution">{organization(entry.organizationId)}</p><div class="education-bottom"><p class="date-range">{period(entry.period)}</p>{entry.academicAverage !== null && <p class="academic-average">{t('education.academicAverage', { average: new Intl.NumberFormat(locale, { maximumFractionDigits: 2 }).format(entry.academicAverage) })}</p>}</div></article>)}</div></section>}
+{entries.length > 0 && <section class="container section" id="education" aria-labelledby="education-title"><SectionHeading id="education-title" eyebrow={t('education.eyebrow')} title={t('education.title')} /><div class="grid-two education-grid">{entries.map(entry => <article class="card education-card"><p class="eyebrow">{t(`learningKinds.${entry.kind}`)}</p><h3>{t(`${entry.contentKey}.title`)}</h3><p class="institution">{organization(entry.organizationId)}</p><div class="education-bottom"><p class="date-range">{period(entry.period)}</p>{entry.academicAverage !== null && <p class="academic-average">{t('education.academicAverage', { average: new Intl.NumberFormat(formatLocale, { maximumFractionDigits: 2 }).format(entry.academicAverage) })}</p>}</div></article>)}</div></section>}
