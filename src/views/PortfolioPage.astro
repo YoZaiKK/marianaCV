@@ -1,0 +1,16 @@
+---
+import { getContent } from '../content';
+import type { Locale } from '../i18n';
+import SiteLayout from '../layouts/SiteLayout.astro';
+import Hero from '../components/sections/Hero.astro';
+import Profile from '../components/sections/Profile.astro';
+import Expertise from '../components/sections/Expertise.astro';
+import Experience from '../components/sections/Experience.astro';
+import Education from '../components/sections/Education.astro';
+import ProfessionalDevelopment from '../components/sections/ProfessionalDevelopment.astro';
+import ToolsMethodsLanguages from '../components/sections/ToolsMethodsLanguages.astro';
+import Contact from '../components/sections/Contact.astro';
+interface Props { locale: Locale }
+const content = getContent(Astro.props.locale);
+---
+<SiteLayout content={content}><Hero content={content} /><Profile content={content} /><Expertise content={content} /><Experience content={content} /><Education content={content} /><ProfessionalDevelopment content={content} /><ToolsMethodsLanguages content={content} /><Contact content={content} /></SiteLayout>

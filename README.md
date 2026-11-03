@@ -1,43 +1,89 @@
-# Astro Starter Kit: Minimal
+# Mariana Alejo Flores
+
+Portafolio profesional de Recursos Humanos construido con Astro. Presenta experiencia, especialidades, formación, desarrollo profesional, herramientas y contacto en una interfaz editorial, accesible y responsive.
+
+<p align="center">
+  <img src="./public/images/pearl-desktop.webp" alt="Textura perlada iridiscente del sitio en formato escritorio" width="760">
+</p>
+
+| Escritorio | Móvil |
+| --- | --- |
+| ![Textura de fondo para escritorio](./public/images/pearl-desktop.webp) | ![Textura de fondo para móvil](./public/images/pearl-mobile.webp) |
+
+## Características
+
+- Contenido profesional en inglés, modelado y validado antes de cada compilación.
+- Navegación por secciones: perfil, áreas de experiencia, trayectoria, educación, desarrollo profesional, herramientas, métodos, idiomas y contacto.
+- CV bilingüe descargable sin modificación del documento original.
+- Diseño responsive con fuentes locales y una textura perlada optimizada para escritorio y móvil.
+- Experiencia funcional sin JavaScript para contenido, navegación, desplegables y descarga; JavaScript solo mejora la iluminación de fondo y la copia del correo.
+- Respeta `prefers-reduced-motion` y evita solicitudes a servicios de fuentes externos.
+
+## Tecnologías
+
+- [Astro](https://astro.build/) con salida estática
+- TypeScript y validación de contenido
+- Node.js Test Runner y Playwright
+- Fontsource: DM Sans y DM Serif Display
+
+## Desarrollo local
+
+Requiere Node.js `>=22.23.4`.
 
 ```sh
-npm create astro@latest -- --template minimal
+npm ci
+npm run dev -- --background
 ```
 
-> 🧑‍🚀 **Seasoned astronaut?** Delete this file. Have fun!
+El servidor de desarrollo se administra en modo background:
 
-## 🚀 Project Structure
+```sh
+npm run astro -- dev status
+npm run astro -- dev logs
+npm run astro -- dev stop
+```
 
-Inside of your Astro project, you'll see the following folders and files:
+## Verificación
+
+```sh
+npm run check
+npm test
+npm run build
+```
+
+Para comprobar la versión estática con las pruebas de navegador:
+
+```sh
+npm run serve:build
+```
+
+En otra terminal:
+
+```sh
+npm run test:e2e
+```
+
+El servidor de la compilación se expone en `http://127.0.0.1:4322`. Las pruebas de navegador usan Microsoft Edge en modo headless y también cubren una vista móvil emulada. Puede utilizarse `TEST_BASE_URL` para apuntarlas a otra URL local.
+
+## Estructura
 
 ```text
-/
-├── public/
-├── src/
-│   └── pages/
-│       └── index.astro
-└── package.json
+src/
+  components/  Componentes y secciones editoriales
+  content/     Datos, traducciones, esquema y validación
+  i18n/        Formateo localizado y acceso a diccionarios
+  layouts/     Estructura global de la página
+  styles/      Tokens y estilos responsive
+  views/       Composición del portafolio
+public/
+  images/      Texturas optimizadas del sitio
+  resume/      CV bilingüe descargable
+tests/         Pruebas unitarias y de integración
+docs/          Guías de contenido y decisiones de fuentes
 ```
 
-Astro looks for `.astro` or `.md` files in the `src/pages/` directory. Each page is exposed as a route based on its file name.
+## Contenido y despliegue
 
-There's nothing special about `src/components/`, but that's where we like to put any Astro/React/Vue/Svelte/Preact components.
+Consulta la [guía de actualización de contenido](./docs/content-guide.md) antes de modificar experiencia, formación, contacto o el CV. Las decisiones de procedencia y presentación están documentadas en [fuentes y decisiones editoriales](./docs/source-decisions.md).
 
-Any static assets, like images, can be placed in the `public/` directory.
-
-## 🧞 Commands
-
-All commands are run from the root of the project, from a terminal:
-
-| Command                   | Action                                           |
-| :------------------------ | :----------------------------------------------- |
-| `npm install`             | Installs dependencies                            |
-| `npm run dev`             | Starts local dev server at `localhost:4321`      |
-| `npm run build`           | Build your production site to `./dist/`          |
-| `npm run preview`         | Preview your build locally, before deploying     |
-| `npm run astro ...`       | Run CLI commands like `astro add`, `astro check` |
-| `npm run astro -- --help` | Get help using the Astro CLI                     |
-
-## 👀 Want to learn more?
-
-Feel free to check [our documentation](https://docs.astro.build) or jump into our [Discord server](https://astro.build/chat).
+El proyecto no declara un dominio ni se publica con una URL canónica inventada. Cuando exista uno, define `SITE_URL` antes de compilar para generar las etiquetas canónicas y `og:url`.

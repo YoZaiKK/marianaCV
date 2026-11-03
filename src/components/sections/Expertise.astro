@@ -1,0 +1,8 @@
+---
+import { published, type SiteContent } from '../../content';
+import SectionHeading from '../SectionHeading.astro';
+interface Props { content: SiteContent }
+const { content: { data, t } } = Astro.props;
+const entries = published(data.expertise);
+---
+{entries.length > 0 && <section class="container section" id="expertise" aria-labelledby="expertise-title"><SectionHeading id="expertise-title" eyebrow={t('expertise.eyebrow')} title={t('expertise.title')} intro={t('expertise.intro')} /><div class="grid-three expertise-grid">{entries.map((entry, index) => <article class:list={['card', 'expertise-card', `accent-${entry.accent}`]}><div class="expertise-top"><span class="card-index" aria-hidden="true">{String(index + 1).padStart(2, '0')}</span><svg viewBox="0 0 64 64" width="58" height="58" fill="none" aria-hidden="true">{index === 0 ? <><circle cx="24" cy="23" r="10"/><circle cx="41" cy="30" r="8"/><path d="M7 52c0-12 8-19 17-19s17 7 17 19m-6-13c10-4 22 2 22 13"/></> : index === 1 ? <><path d="M32 55V27M32 41C10 41 9 18 9 18s23-2 23 23ZM32 32C32 9 55 9 55 9s1 23-23 23Z"/><path d="M21 55h22"/></> : <><rect x="12" y="15" width="40" height="40" rx="9"/><path d="M23 15v-5h18v5M22 29h20M22 38h20M22 47h11"/></>}</svg></div><h3>{t(`${entry.contentKey}.title`)}</h3><p>{t(`${entry.contentKey}.description`)}</p></article>)}</div></section>}

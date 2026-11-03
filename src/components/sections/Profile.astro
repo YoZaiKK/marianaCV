@@ -1,0 +1,6 @@
+---
+import type { SiteContent } from '../../content';
+interface Props { content: SiteContent }
+const { content: { t } } = Astro.props;
+---
+<section class="container section" id="about" aria-labelledby="profile-title"><div class="card profile-card"><div><p class="eyebrow">{t('profile.eyebrow')}</p><h2 id="profile-title">{t('profile.title')}</h2><p class="profile-aside"><span aria-hidden="true">↗</span>{t('profile.aside')}</p></div><div class="profile-copy"><p class="lead">{t('profile.intro')}</p><p>{t('profile.body')}</p></div></div></section>

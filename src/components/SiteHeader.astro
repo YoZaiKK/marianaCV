@@ -1,0 +1,13 @@
+---
+import type { SiteContent } from '../content';
+import Arrow from './Arrow.astro';
+interface Props { content: SiteContent }
+const { content: { data, t, url, navigation } } = Astro.props;
+const home = url();
+const initials = data.profile.name.split(/\s+/).map(part => part[0]).join('').toLowerCase();
+---
+<header class="site-header container" id="top">
+  <a class="brand" href={home} aria-label={t('navigation.home', { name: data.profile.name })}><span class="brand-mark" aria-hidden="true">{initials.slice(0, -1)}<span>{initials.slice(-1)}</span></span><span class="brand-name">{data.profile.name}</span></a>
+  <nav aria-label={t('navigation.label')}><ul>{navigation.map(link => <li><a href={url(link.id)}>{t(link.contentKey)}</a></li>)}</ul></nav>
+  {data.profile.resumeUrl && <a class="header-cv" href={data.profile.resumeUrl} download aria-label={t('actions.downloadCvAccessible', { name: data.profile.name })}>{t('actions.downloadCv')}<Arrow diagonal /></a>}
+</header>

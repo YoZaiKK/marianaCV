@@ -1,0 +1,27 @@
+:root {
+  color-scheme: light;
+  --mist: #f2f2f2;
+  --sage: #e8efd2;
+  --lilac: #beb9de;
+  --pink: #f7cde7;
+  --cyan: #d8eef0;
+  --ink: #203b35;
+  --muted: #4e605a;
+  --surface: #fff;
+  --line: #d9dfd7;
+  --font-display: 'DM Serif Display', Georgia, 'Times New Roman', serif;
+  --font-body: 'DM Sans', Arial, sans-serif;
+  --space-1: 4px;
+  --space-2: 8px;
+  --space-3: 12px;
+  --space-4: 16px;
+  --space-5: 24px;
+  --space-6: 32px;
+  --space-7: 40px;
+  --space-8: 64px;
+  --space-9: 96px;
+  --radius: 24px;
+  --shadow: 0 16px 48px rgb(32 59 53 / 8%);
+  --max-width: 1160px;
+  --transition: 160ms ease;
+}

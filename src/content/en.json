@@ -1,0 +1,212 @@
+{
+  "meta": {
+    "homeTitle": "{{name}} | Human Resources",
+    "homeDescription": "Explore {{name}}’s experience in talent acquisition, organizational development, training and HR operations.",
+    "notFoundTitle": "Page not found | {{name}}",
+    "notFoundDescription": "This page could not be found. Return to {{name}}’s professional profile."
+  },
+  "navigation": {
+    "about": "About",
+    "expertise": "Expertise",
+    "experience": "Experience",
+    "education": "Education",
+    "contact": "Contact",
+    "label": "Main navigation",
+    "home": "{{name}} — home"
+  },
+  "actions": {
+    "explore": "Explore my experience",
+    "downloadCv": "Download CV",
+    "downloadCvAccessible": "Download {{name}}’s CV in English and Spanish (PDF)",
+    "getInTouch": "Get in touch",
+    "sendEmail": "Send an email",
+    "copyEmail": "Copy email address",
+    "backToTop": "Back to top",
+    "backHome": "Back to home"
+  },
+  "accessibility": {
+    "skip": "Skip to main content",
+    "emailStatus": "Email copy status",
+    "footerNavigation": "More about {{name}}",
+    "currentRole": "Current role"
+  },
+  "hero": {
+    "eyebrow": "People. Purpose. Possibility.",
+    "role": "Human Resources Professional",
+    "statement": "Supporting people across talent acquisition, organizational development and everyday HR operations.",
+    "location": "Mexico City, Mexico",
+    "note": "A Psychology background. A people-focused perspective."
+  },
+  "profile": {
+    "eyebrow": "A little about me",
+    "title": "A people-focused approach to HR.",
+    "intro": "I am a Psychology graduate with experience in recruitment, organizational development, training and employee administration.",
+    "body": "My work includes training needs analysis, performance evaluation, career development planning and employee follow-up, alongside initiatives that support integration, workplace culture and well-being.",
+    "aside": "Connecting people, processes and development."
+  },
+  "expertise": {
+    "eyebrow": "Where I contribute",
+    "title": "Areas of expertise",
+    "intro": "Three connected areas of human resources practice.",
+    "talentAcquisition": {
+      "title": "Talent Acquisition",
+      "description": "Recruitment and selection for corporate, administrative and operational roles, including high-volume hiring, candidate screening, interviews and psychometric assessment."
+    },
+    "organizationalDevelopment": {
+      "title": "Organizational Development",
+      "description": "Training needs analysis, performance evaluation, career development planning and initiatives that support workplace culture, integration and employee well-being."
+    },
+    "hrOperations": {
+      "title": "HR Operations",
+      "description": "Employee records, onboarding and offboarding, probationary contract follow-up, attendance tracking and payroll support."
+    }
+  },
+  "experience": {
+    "eyebrow": "My professional path",
+    "title": "Experience, in practice.",
+    "intro": "Recruitment, development and the everyday work of supporting people.",
+    "additional": "Additional responsibilities",
+    "additionalAccessible": "Additional responsibilities at {{company}}",
+    "responsibilities": "Selected responsibilities",
+    "outcomes": "Documented outcomes",
+    "carters": {
+      "role": "Human Resources Coordinator",
+      "summary": "Coordinate recruitment, employee documentation and integration activities across corporate, administrative and operational roles.",
+      "responsibilities": {
+        "recruitment": "Manage recruitment and selection for corporate and administrative positions, alongside high-volume hiring for operational roles in the nearshoring segment.",
+        "records": "Maintain physical and digital employee files and employment documentation.",
+        "contracts": "Track probationary contracts, review dates and employee evaluation follow-up.",
+        "onboarding": "Coordinate induction and onboarding activities for new employees.",
+        "culture": "Organize employee celebrations and commemorative events that support integration and a sense of belonging.",
+        "incidents": "Record and follow up on employee-related incidents for HR administration."
+      }
+    },
+    "kaptan": {
+      "role": "Human Resources Analyst",
+      "summary": "Combine recruitment and training activities with employee follow-up and day-to-day HR administration.",
+      "responsibilities": {
+        "recruitment": "Manage vacancy posting, CV screening, interviews and psychometric assessments.",
+        "training": "Design and implement training programmes based on training needs analysis (DNC).",
+        "onboarding": "Manage onboarding and offboarding processes and follow up on employee integration and performance.",
+        "records": "Maintain physical and digital employee records and databases in Buk.",
+        "administration": "Support payroll processes, attendance tracking and administrative documentation.",
+        "workshops": "Organize internal workshops on burnout prevention and assertive communication."
+      }
+    },
+    "colmena": {
+      "role": "Human Resources Consultant",
+      "summary": "Work across recruitment, organizational development and employee development processes.",
+      "responsibilities": {
+        "recruitment": "Lead recruitment processes and organizational development initiatives.",
+        "performance": "Design and implement performance evaluation processes and career development plans.",
+        "followUp": "Follow up on employee integration, performance and retention.",
+        "culture": "Contribute to initiatives that strengthen organizational culture and workplace climate.",
+        "training": "Support internal training and development programmes."
+      }
+    },
+    "iztacala": {
+      "role": "Organizational Psychology Intern",
+      "summary": "Apply Psychology training in selection processes, teamwork initiatives and workplace well-being activities.",
+      "responsibilities": {
+        "assessment": "Participate in the administration and interpretation of psychometric assessments for personnel selection.",
+        "wellbeing": "Collaborate on strategies for teamwork, emotional resilience and employee well-being.",
+        "workshops": "Assist with emotional support workshops during the COVID-19 contingency."
+      }
+    }
+  },
+  "education": {
+    "eyebrow": "The foundation",
+    "title": "Education",
+    "academicAverage": "Academic average: {{average}}",
+    "psychology": {
+      "title": "Degree in Psychology"
+    },
+    "diploma": {
+      "title": "Diploma in Early Intervention and Neurodevelopmental Rehabilitation"
+    }
+  },
+  "learningKinds": {
+    "degree": "Undergraduate degree",
+    "diploma": "Continuing education diploma",
+    "dc3": "DC-3 training record",
+    "introductoryTraining": "Introductory training",
+    "training": "Training",
+    "workshop": "Workshop"
+  },
+  "development": {
+    "eyebrow": "Continuing to learn",
+    "title": "Professional development",
+    "groups": {
+      "hrAdministration": {
+        "title": "Recruitment & HR Administration"
+      },
+      "workplaceWellbeing": {
+        "title": "Workplace Well-being & Communication"
+      },
+      "additional": {
+        "title": "Additional Development"
+      }
+    },
+    "recruitment": {
+      "title": "Recruitment and Selection Process"
+    },
+    "payroll": {
+      "title": "Payroll, IMSS and INFONAVIT"
+    },
+    "nom035": {
+      "title": "Introduction to NOM-035: Psychosocial Risk Factors"
+    },
+    "communication": {
+      "title": "Assertive Communication and Burnout Prevention"
+    },
+    "resilience": {
+      "title": "Resilience and Crisis Intervention"
+    },
+    "grief": {
+      "title": "Grief Management"
+    }
+  },
+  "practice": {
+    "eyebrow": "Everyday practice",
+    "title": "Tools, methods & languages",
+    "groups": {
+      "tools": {
+        "title": "Tools"
+      },
+      "methods": {
+        "title": "Methods & Assessment"
+      },
+      "languages": {
+        "title": "Languages"
+      }
+    },
+    "recruitmentPlatforms": "Recruitment platforms",
+    "dnc": "Training needs analysis (DNC)",
+    "nineBox": "Performance and potential assessment using 9 Box",
+    "psychometrics": "Psychometric assessment: {{instruments}}",
+    "spanish": "Spanish — Native",
+    "english": "English — B2"
+  },
+  "contact": {
+    "eyebrow": "The next conversation",
+    "title": "Let’s connect.",
+    "description": "For conversations about HR roles and professional opportunities, please get in touch.",
+    "location": "Azcapotzalco, Mexico City, Mexico",
+    "copySuccess": "Email address copied.",
+    "copyError": "The email address could not be copied. Select it manually or use the email link."
+  },
+  "dates": {
+    "present": "Present",
+    "range": "{{start}}–{{end}}"
+  },
+  "footer": {
+    "copyright": "© {{year}} {{name}}",
+    "development": "Professional development",
+    "practice": "Tools, methods & languages"
+  },
+  "notFound": {
+    "code": "404",
+    "title": "A page out of place.",
+    "description": "The page you’re looking for could not be found. You can return to my professional profile below."
+  }
+}

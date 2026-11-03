@@ -1,0 +1,17 @@
+---
+import type { Experience } from '../content/model';
+import type { SiteContent } from '../content';
+interface Props { entry: Experience; content: SiteContent; index: number }
+const { entry, content: { t, organization, period }, index } = Astro.props;
+const responsibilities = [...entry.responsibilities].sort((a, b) => a.order - b.order);
+const primary = responsibilities.filter(item => item.placement === 'primary');
+const additional = responsibilities.filter(item => item.placement === 'additional');
+const company = organization(entry.organizationId);
+---
+<article class:list={['card', 'experience-card', { 'experience-card--current': entry.period.isCurrent }]} aria-labelledby={`${entry.id}-title`}>
+  <div class="experience-meta"><span class="card-index" aria-hidden="true">{String(index + 1).padStart(2, '0')}</span><p class="company">{company}</p><p class="date-range">{period(entry.period)}</p>{entry.period.isCurrent && <span class="current-badge"><span aria-hidden="true"></span>{t('accessibility.currentRole')}</span>}</div>
+  <div class="experience-body"><h3 id={`${entry.id}-title`}>{t(`${entry.contentKey}.role`)}</h3><p class="experience-summary">{t(`${entry.contentKey}.summary`)}</p><ul class="responsibilities" aria-label={t('experience.responsibilities')}>{primary.map(item => <li>{t(item.contentKey)}</li>)}</ul>
+    {additional.length > 0 && <details><summary aria-label={t('experience.additionalAccessible', { company })}>{t('experience.additional')}<span class="details-plus" aria-hidden="true"></span></summary><ul class="responsibilities additional-responsibilities">{additional.map(item => <li>{t(item.contentKey)}</li>)}</ul></details>}
+    {entry.outcomes.length > 0 && <div class="outcomes"><h4>{t('experience.outcomes')}</h4><ul>{entry.outcomes.map(item => <li>{t(item.contentKey)}</li>)}</ul></div>}
+  </div>
+</article>

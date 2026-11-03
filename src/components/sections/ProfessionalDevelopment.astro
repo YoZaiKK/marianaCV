@@ -1,0 +1,8 @@
+---
+import { published, type SiteContent } from '../../content';
+import SectionHeading from '../SectionHeading.astro';
+interface Props { content: SiteContent }
+const { content: { data, t } } = Astro.props;
+const groups = published(data.developmentGroups).map(group => ({ ...group, items: published(data.development).filter(item => item.groupId === group.id) })).filter(group => group.items.length);
+---
+{groups.length > 0 && <section class="container section" id="development" aria-labelledby="development-title"><SectionHeading id="development-title" eyebrow={t('development.eyebrow')} title={t('development.title')} /><div class="grid-three development-grid">{groups.map(group => <article class="card development-card"><h3>{t(`${group.contentKey}.title`)}</h3><ul class="learning-list">{group.items.map(item => <li><span>{t(`${item.contentKey}.title`)}</span><span class="learning-kind">{t(`learningKinds.${item.kind}`)}</span></li>)}</ul></article>)}</div></section>}

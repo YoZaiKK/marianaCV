@@ -1,0 +1,8 @@
+---
+import { published, type SiteContent } from '../../content';
+import SectionHeading from '../SectionHeading.astro';
+interface Props { content: SiteContent }
+const { content: { data, t, locale } } = Astro.props;
+const groups = published(data.practiceGroups).map(group => ({ ...group, items: published(data.practices).filter(item => item.groupId === group.id) })).filter(group => group.items.length);
+---
+{groups.length > 0 && <section class="container section" id="practice" aria-labelledby="practice-title"><SectionHeading id="practice-title" eyebrow={t('practice.eyebrow')} title={t('practice.title')} /><div class="practice-grid">{groups.map(group => <article class="card practice-card"><h3>{t(`${group.contentKey}.title`)}</h3><ul>{group.items.map(item => <li>{item.name ?? t(item.contentKey!, item.instrumentNames ? { instruments: new Intl.ListFormat(locale, { style: 'long', type: 'conjunction' }).format(item.instrumentNames) } : {})}</li>)}</ul></article>)}</div></section>}

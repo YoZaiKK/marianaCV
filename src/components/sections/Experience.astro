@@ -1,0 +1,10 @@
+---
+import { published, type SiteContent } from '../../content';
+import SectionHeading from '../SectionHeading.astro';
+import ExperienceCard from '../ExperienceCard.astro';
+interface Props { content: SiteContent }
+const { content } = Astro.props;
+const { data, t } = content;
+const entries = published(data.experience);
+---
+{entries.length > 0 && <section class="container section" id="experience" aria-labelledby="experience-title"><SectionHeading id="experience-title" eyebrow={t('experience.eyebrow')} title={t('experience.title')} intro={t('experience.intro')} /><div class="experience-list">{entries.map((entry, index) => <ExperienceCard entry={entry} index={index} content={content} />)}</div></section>}

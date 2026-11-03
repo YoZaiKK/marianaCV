@@ -1,0 +1,7 @@
+---
+import type { SiteContent } from '../content';
+import Arrow from './Arrow.astro';
+interface Props { content: SiteContent }
+const { content: { data, t, url, sections } } = Astro.props;
+---
+<footer class="site-footer container"><p>{t('footer.copyright', { year: new Date().getFullYear(), name: data.profile.name })}</p>{(sections.development || sections.practice) && <nav aria-label={t('accessibility.footerNavigation', { name: data.profile.name })}>{sections.development && <a href={url('development')}>{t('footer.development')}</a>}{sections.practice && <a href={url('practice')}>{t('footer.practice')}</a>}</nav>}<a href="#top" class="back-top">{t('actions.backToTop')}<Arrow diagonal /></a></footer>

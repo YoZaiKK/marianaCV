@@ -1,0 +1,526 @@
+{
+  "schemaVersion": 1,
+  "profile": {
+    "name": "Mariana Alejo Flores",
+    "email": "marianalejo81@gmail.com",
+    "phone": {
+      "display": "(55) 19184688",
+      "visible": false
+    },
+    "locationKey": "contact.location",
+    "resumeUrl": "/resume/mariana-alejo-flores-cv.pdf",
+    "portraitUrl": null,
+    "links": []
+  },
+  "navigation": [
+    {
+      "id": "about",
+      "contentKey": "navigation.about"
+    },
+    {
+      "id": "expertise",
+      "contentKey": "navigation.expertise"
+    },
+    {
+      "id": "experience",
+      "contentKey": "navigation.experience"
+    },
+    {
+      "id": "education",
+      "contentKey": "navigation.education"
+    },
+    {
+      "id": "contact",
+      "contentKey": "navigation.contact"
+    }
+  ],
+  "organizations": [
+    {
+      "id": "carters",
+      "name": "Carter’s"
+    },
+    {
+      "id": "kaptan",
+      "name": "Kaptan Internacional"
+    },
+    {
+      "id": "colmena",
+      "name": "Colmena de Talento"
+    },
+    {
+      "id": "fes-iztacala",
+      "name": "UNAM — FES Iztacala"
+    },
+    {
+      "id": "unam",
+      "name": "UNAM"
+    }
+  ],
+  "expertise": [
+    {
+      "id": "talent-acquisition",
+      "contentKey": "expertise.talentAcquisition",
+      "order": 1,
+      "publicationStatus": "published",
+      "experienceIds": [
+        "carters-coordinator",
+        "kaptan-analyst",
+        "colmena-consultant"
+      ],
+      "accent": "sage"
+    },
+    {
+      "id": "organizational-development",
+      "contentKey": "expertise.organizationalDevelopment",
+      "order": 2,
+      "publicationStatus": "published",
+      "experienceIds": [
+        "kaptan-analyst",
+        "colmena-consultant",
+        "iztacala-intern"
+      ],
+      "accent": "lilac"
+    },
+    {
+      "id": "hr-operations",
+      "contentKey": "expertise.hrOperations",
+      "order": 3,
+      "publicationStatus": "published",
+      "experienceIds": [
+        "carters-coordinator",
+        "kaptan-analyst"
+      ],
+      "accent": "pink"
+    }
+  ],
+  "experience": [
+    {
+      "id": "carters-coordinator",
+      "organizationId": "carters",
+      "contentKey": "experience.carters",
+      "order": 1,
+      "publicationStatus": "published",
+      "period": {
+        "start": {
+          "value": "2026-08",
+          "precision": "month"
+        },
+        "end": null,
+        "isCurrent": true
+      },
+      "responsibilities": [
+        {
+          "id": "recruitment",
+          "contentKey": "experience.carters.responsibilities.recruitment",
+          "placement": "primary",
+          "order": 1
+        },
+        {
+          "id": "records",
+          "contentKey": "experience.carters.responsibilities.records",
+          "placement": "primary",
+          "order": 2
+        },
+        {
+          "id": "contracts",
+          "contentKey": "experience.carters.responsibilities.contracts",
+          "placement": "primary",
+          "order": 3
+        },
+        {
+          "id": "onboarding",
+          "contentKey": "experience.carters.responsibilities.onboarding",
+          "placement": "additional",
+          "order": 4
+        },
+        {
+          "id": "culture",
+          "contentKey": "experience.carters.responsibilities.culture",
+          "placement": "additional",
+          "order": 5
+        },
+        {
+          "id": "incidents",
+          "contentKey": "experience.carters.responsibilities.incidents",
+          "placement": "additional",
+          "order": 6
+        }
+      ],
+      "outcomes": []
+    },
+    {
+      "id": "kaptan-analyst",
+      "organizationId": "kaptan",
+      "contentKey": "experience.kaptan",
+      "order": 2,
+      "publicationStatus": "published",
+      "period": {
+        "start": {
+          "value": "2025-01",
+          "precision": "month"
+        },
+        "end": {
+          "value": "2026-08",
+          "precision": "month"
+        },
+        "isCurrent": false
+      },
+      "responsibilities": [
+        {
+          "id": "recruitment",
+          "contentKey": "experience.kaptan.responsibilities.recruitment",
+          "placement": "primary",
+          "order": 1
+        },
+        {
+          "id": "training",
+          "contentKey": "experience.kaptan.responsibilities.training",
+          "placement": "primary",
+          "order": 2
+        },
+        {
+          "id": "onboarding",
+          "contentKey": "experience.kaptan.responsibilities.onboarding",
+          "placement": "additional",
+          "order": 3
+        },
+        {
+          "id": "records",
+          "contentKey": "experience.kaptan.responsibilities.records",
+          "placement": "additional",
+          "order": 4
+        },
+        {
+          "id": "administration",
+          "contentKey": "experience.kaptan.responsibilities.administration",
+          "placement": "additional",
+          "order": 5
+        },
+        {
+          "id": "workshops",
+          "contentKey": "experience.kaptan.responsibilities.workshops",
+          "placement": "additional",
+          "order": 6
+        }
+      ],
+      "outcomes": []
+    },
+    {
+      "id": "colmena-consultant",
+      "organizationId": "colmena",
+      "contentKey": "experience.colmena",
+      "order": 3,
+      "publicationStatus": "published",
+      "period": {
+        "start": {
+          "value": "2025",
+          "precision": "year"
+        },
+        "end": {
+          "value": "2026-08",
+          "precision": "month"
+        },
+        "isCurrent": false
+      },
+      "responsibilities": [
+        {
+          "id": "recruitment",
+          "contentKey": "experience.colmena.responsibilities.recruitment",
+          "placement": "primary",
+          "order": 1
+        },
+        {
+          "id": "performance",
+          "contentKey": "experience.colmena.responsibilities.performance",
+          "placement": "primary",
+          "order": 2
+        },
+        {
+          "id": "followUp",
+          "contentKey": "experience.colmena.responsibilities.followUp",
+          "placement": "primary",
+          "order": 3
+        },
+        {
+          "id": "culture",
+          "contentKey": "experience.colmena.responsibilities.culture",
+          "placement": "additional",
+          "order": 4
+        },
+        {
+          "id": "training",
+          "contentKey": "experience.colmena.responsibilities.training",
+          "placement": "additional",
+          "order": 5
+        }
+      ],
+      "outcomes": []
+    },
+    {
+      "id": "iztacala-intern",
+      "organizationId": "fes-iztacala",
+      "contentKey": "experience.iztacala",
+      "order": 4,
+      "publicationStatus": "published",
+      "period": {
+        "start": {
+          "value": "2019",
+          "precision": "year"
+        },
+        "end": {
+          "value": "2022",
+          "precision": "year"
+        },
+        "isCurrent": false
+      },
+      "responsibilities": [
+        {
+          "id": "assessment",
+          "contentKey": "experience.iztacala.responsibilities.assessment",
+          "placement": "primary",
+          "order": 1
+        },
+        {
+          "id": "wellbeing",
+          "contentKey": "experience.iztacala.responsibilities.wellbeing",
+          "placement": "primary",
+          "order": 2
+        },
+        {
+          "id": "workshops",
+          "contentKey": "experience.iztacala.responsibilities.workshops",
+          "placement": "additional",
+          "order": 3
+        }
+      ],
+      "outcomes": []
+    }
+  ],
+  "education": [
+    {
+      "id": "psychology-degree",
+      "organizationId": "fes-iztacala",
+      "kind": "degree",
+      "contentKey": "education.psychology",
+      "period": {
+        "start": {
+          "value": "2019",
+          "precision": "year"
+        },
+        "end": {
+          "value": "2022",
+          "precision": "year"
+        },
+        "isCurrent": false
+      },
+      "academicAverage": 9.07,
+      "order": 1,
+      "publicationStatus": "published"
+    },
+    {
+      "id": "neurodevelopment-diploma",
+      "organizationId": "unam",
+      "kind": "diploma",
+      "contentKey": "education.diploma",
+      "period": {
+        "start": {
+          "value": "2022",
+          "precision": "year"
+        },
+        "end": {
+          "value": "2024",
+          "precision": "year"
+        },
+        "isCurrent": false
+      },
+      "academicAverage": null,
+      "order": 2,
+      "publicationStatus": "published"
+    }
+  ],
+  "developmentGroups": [
+    {
+      "id": "hr-administration",
+      "contentKey": "development.groups.hrAdministration",
+      "order": 1,
+      "publicationStatus": "published"
+    },
+    {
+      "id": "workplace-wellbeing",
+      "contentKey": "development.groups.workplaceWellbeing",
+      "order": 2,
+      "publicationStatus": "published"
+    },
+    {
+      "id": "additional-development",
+      "contentKey": "development.groups.additional",
+      "order": 3,
+      "publicationStatus": "published"
+    }
+  ],
+  "development": [
+    {
+      "id": "recruitment-dc3",
+      "groupId": "hr-administration",
+      "kind": "dc3",
+      "contentKey": "development.recruitment",
+      "issuerId": null,
+      "date": null,
+      "order": 1,
+      "publicationStatus": "published"
+    },
+    {
+      "id": "payroll-dc3",
+      "groupId": "hr-administration",
+      "kind": "dc3",
+      "contentKey": "development.payroll",
+      "issuerId": null,
+      "date": null,
+      "order": 2,
+      "publicationStatus": "published"
+    },
+    {
+      "id": "nom035",
+      "groupId": "workplace-wellbeing",
+      "kind": "introductoryTraining",
+      "contentKey": "development.nom035",
+      "issuerId": null,
+      "date": null,
+      "order": 3,
+      "publicationStatus": "published"
+    },
+    {
+      "id": "communication",
+      "groupId": "workplace-wellbeing",
+      "kind": "workshop",
+      "contentKey": "development.communication",
+      "issuerId": null,
+      "date": null,
+      "order": 4,
+      "publicationStatus": "published"
+    },
+    {
+      "id": "resilience",
+      "groupId": "additional-development",
+      "kind": "training",
+      "contentKey": "development.resilience",
+      "issuerId": null,
+      "date": null,
+      "order": 5,
+      "publicationStatus": "published"
+    },
+    {
+      "id": "grief",
+      "groupId": "additional-development",
+      "kind": "workshop",
+      "contentKey": "development.grief",
+      "issuerId": null,
+      "date": null,
+      "order": 6,
+      "publicationStatus": "published"
+    }
+  ],
+  "practiceGroups": [
+    {
+      "id": "tools",
+      "contentKey": "practice.groups.tools",
+      "order": 1,
+      "publicationStatus": "published"
+    },
+    {
+      "id": "methods",
+      "contentKey": "practice.groups.methods",
+      "order": 2,
+      "publicationStatus": "published"
+    },
+    {
+      "id": "languages",
+      "contentKey": "practice.groups.languages",
+      "order": 3,
+      "publicationStatus": "published"
+    }
+  ],
+  "practices": [
+    {
+      "id": "buk",
+      "groupId": "tools",
+      "name": "Buk",
+      "contentKey": null,
+      "order": 1,
+      "publicationStatus": "published"
+    },
+    {
+      "id": "excel",
+      "groupId": "tools",
+      "name": "Excel",
+      "contentKey": null,
+      "order": 2,
+      "publicationStatus": "published"
+    },
+    {
+      "id": "office",
+      "groupId": "tools",
+      "name": "Microsoft Office",
+      "contentKey": null,
+      "order": 3,
+      "publicationStatus": "published"
+    },
+    {
+      "id": "recruitment-platforms",
+      "groupId": "tools",
+      "name": null,
+      "contentKey": "practice.recruitmentPlatforms",
+      "order": 4,
+      "publicationStatus": "published"
+    },
+    {
+      "id": "dnc",
+      "groupId": "methods",
+      "name": null,
+      "contentKey": "practice.dnc",
+      "order": 5,
+      "publicationStatus": "published"
+    },
+    {
+      "id": "nine-box",
+      "groupId": "methods",
+      "name": null,
+      "contentKey": "practice.nineBox",
+      "order": 6,
+      "publicationStatus": "published"
+    },
+    {
+      "id": "psychometrics",
+      "groupId": "methods",
+      "name": null,
+      "contentKey": "practice.psychometrics",
+      "instrumentNames": [
+        "Cleaver",
+        "Zavic",
+        "Figura Humana"
+      ],
+      "order": 7,
+      "publicationStatus": "published"
+    },
+    {
+      "id": "spanish",
+      "groupId": "languages",
+      "languageCode": "es",
+      "levelCode": "native",
+      "name": null,
+      "contentKey": "practice.spanish",
+      "order": 8,
+      "publicationStatus": "published"
+    },
+    {
+      "id": "english",
+      "groupId": "languages",
+      "languageCode": "en",
+      "levelCode": "B2",
+      "name": null,
+      "contentKey": "practice.english",
+      "order": 9,
+      "publicationStatus": "published"
+    }
+  ]
+}

@@ -1,0 +1,16 @@
+---
+import '@fontsource/dm-serif-display/latin-400.css';
+import '@fontsource/dm-sans/latin-400.css';
+import '@fontsource/dm-sans/latin-500.css';
+import '@fontsource/dm-sans/latin-600.css';
+import '../styles/tokens.css';
+import '../styles/global.css';
+import PearlBackground from '../components/PearlBackground.astro';
+import SiteHeader from '../components/SiteHeader.astro';
+import SiteFooter from '../components/SiteFooter.astro';
+import type { SiteContent } from '../content';
+interface Props { content: SiteContent; title?: string; description?: string; notFound?: boolean }
+const { content, title = content.t('meta.homeTitle', { name: content.data.profile.name }), description = content.t('meta.homeDescription', { name: content.data.profile.name }), notFound = false } = Astro.props;
+const canonical = Astro.site && !notFound ? new URL(Astro.url.pathname, Astro.site).href : undefined;
+---
+<!doctype html><html lang={content.locale}><head><meta charset="utf-8" /><meta name="viewport" content="width=device-width, initial-scale=1" /><title>{title}</title><meta name="description" content={description} /><meta name="theme-color" content="#F2F2F2" /><link rel="icon" type="image/svg+xml" href="/favicon.svg" /><meta property="og:type" content="website" /><meta property="og:title" content={title} /><meta property="og:description" content={description} /><meta name="twitter:card" content="summary" />{canonical && <><link rel="canonical" href={canonical} /><meta property="og:url" content={canonical} /></>}{notFound && <meta name="robots" content="noindex" />}</head><body><a class="skip-link" href="#main-content">{content.t('accessibility.skip')}</a><PearlBackground /><SiteHeader content={content} /><main id="main-content" tabindex="-1"><slot /></main><SiteFooter content={content} /></body></html>
